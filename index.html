@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>🚲 Grand Volga Tour Map</title>
+    <meta property="og:title" content="🚲 Grand Volga Tour Map" />
+    <meta property="og:description" content="Grand Volga Tour Map" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://andrewalevin.github.io/grand-volga-tour-map/" />
+    <meta property="og:image" content="https://andrewalevin.github.io/grand-volga-tour-map/preview.png" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js"></script>
+
+
+    <link href="https://andrewalevin.github.io/mapbox-adventure/src/cozyspots-v2.2.css" rel="stylesheet">
+
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script src="https://andrewalevin.github.io/mapbox-adventure/assets/js-yaml.min.js"></script>
+
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+
+
+    <script>
+        window.config = window.config || {
+            mapboxToken: 'pk.eyJ1IjoiYW5kcmV3bGV2aW4iLCJhIjoiY2t5ZXM5c3cyMWJxYjJvcGJycmw0dGlyeSJ9.9QfCmimkyYicpprraBc-XQ',
+            mapStyle:  'mapbox://styles/andrewlevin/clurjvodg013d01pe0fqncusu',
+            mapZoom: 8,
+            mapCenter: [55.673263, 36.760358],
+            routesRoot: 'segmants',
+            imagesRoot: 'imgs',
+            routes: [
+                {'path': 'polushkino.gpx', 'color': 'red', 'title': 'Полушкино',},
+                {'path': 'chapaevka.gpx', 'color': 'limegreen'},
+                {'path': 'gorodok.gpx', 'color': 'limegreen'},
+                {'path': 'kubinka.gpx', 'color': '#EDFF21'},
+                {'path': 'mars.gpx', 'color': 'fuchsia'},
+                {'path': 'sanatornaya.gpx', 'color': 'limegreen'},
+                {'path': 'sima.gpx', 'color': 'limegreen'},
+                {'path': 'tuchkovo.gpx', 'color': 'limegreen'},
+                {'path': 'uspenskoe.gpx', 'color': '#007FFF'},
+                {'path': 'zaharovo.gpx', 'color': 'red'}
+            ]
+        };
+
+    </script>
+
+    <script src="https://andrewalevin.github.io/mapbox-adventure/src/cozyspots-v2.4.js"></script>
+
+</body>
+
+</html>
